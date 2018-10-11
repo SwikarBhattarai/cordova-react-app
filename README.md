@@ -1,8 +1,6 @@
 # Cordova Create React App Tutorial
 
-I was dissatisfied with tutorials that didn't meet my needs, boilerplate projects with incompatible dependencies, and yeoman generators with errors so I decided to make a tutorial to help others set up their initial project. Also if you're migrating an existing web app to Cordova, this will provide insight into what you need to get that to work.
-
-Note that I'm running this tutorial with Cordova 8 but it should work with other versions.
+This is a boilerplate for creating an android or ios app with react and cordova.
 
 ## Installation
 
@@ -86,25 +84,6 @@ To test on a connected devie run:
 
 `cordova run ios`
 
-## Recommended Plugins
-
-Often what you will find is that a plugin is no longer being maintained. In that scenario your options are either to find a fork that resolves the issues you are encountering or, as a last ditch effort, attempt to fix it yourself.
-
-### Firebase OAuth Authentication
-
-To authenticate using OAuth Providers follow these instructions: https://firebase.google.com/docs/auth/web/cordova
-
-Because the cordova-universal-links-plugin is outdated you should instead install this fork:
-```
-cordova plugin add https://github.com/walteram/cordova-universal-links-plugin.git --save
-```
-
-### Firebase Analytics and Push Notifications
-
-Due to various issues that haven't beeen resolved in the latest npm package of cordova-plugin-firebase I recommend getting the version of the plugin directly from git
-```
-cordova plugin add https://github.com/arnesson/cordova-plugin-firebase.git --save
-```
 
 ## iOS Deployment
 
